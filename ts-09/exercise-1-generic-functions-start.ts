@@ -30,7 +30,8 @@ interface User {
 // Pass the `User` type as a type argument to the generic `fetchData()` function.
 // This should fix the type error on Line 35.
 
-let user: User = await fetchData('');
+let user: User = await fetchData('');  //1)
+//let user = await fetchData<User>('');  //2)
 
 
 console.log(user.name);
