@@ -33,6 +33,11 @@ interface User {
 let user: User = await fetchData('');  //1)
 //let user = await fetchData<User>('');  //2)
 
+//my comment
+//In this code, you are creating a new type called User 
+//and using User interface as the type 
+//for the fetchData generic parameter.
+// The data variable now has the type User instead of any.
 
 console.log(user.name);
 
